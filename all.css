@@ -1,0 +1,159 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.noto-sans-bold {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.noto-sans-regular {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.card {
+  width: 1296px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 80px;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  margin: 120px auto 0;
+}
+.card-img {
+  width: 636px;
+  height: 400px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+
+.desc {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  padding: 0 16px;
+}
+.desc h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+  color: #3b3b3b;
+}
+.desc p, .desc li {
+  font-size: 16px;
+}
+.desc p {
+  color: #919191;
+}
+.desc .tag-list {
+  margin-top: 24px;
+  display: flex;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+.desc .tag-list li {
+  padding: 4px 12px;
+  border-radius: 12px;
+  background: #f1f1f1;
+}
+.desc .tag-list li a {
+  color: #3b3b3b;
+}
+
+.page-pagination {
+  margin-top: 72px;
+  font-size: 24px;
+  margin-bottom: 120px;
+}
+.page-pagination ul {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+.page-pagination ul li {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 4px;
+}
+.page-pagination ul li a {
+  color: #3b3b3b;
+}
+.page-pagination ul .active {
+  background: #1e1e1e;
+}
+.page-pagination ul .active a {
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}/*# sourceMappingURL=all.css.map */

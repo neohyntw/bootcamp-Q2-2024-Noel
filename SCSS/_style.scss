@@ -1,0 +1,126 @@
+$fs-1: 28px;
+$fs-2: 24px;
+$fs-3: 20px;
+$fs-4: 16px;
+$primary900: #000000;
+$primary800: #1e1e1e;
+$primary700: #3b3b3b;
+$primary600: #5b5b5b;
+$primary500: #919191;
+$primary400: #c1c1c1;
+$primary300: #e9e9e9;
+$primary200: #f1f1f1;
+$primary100: #fafafa;
+$primary50: #ffffff;
+
+*{
+    // outline: 1px solid grey;
+}
+
+body{
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+.noto-sans-bold {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+  .noto-sans-regular {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+.card{
+    width: 1296px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 80px;
+    column-gap: 24px;
+    margin: 120px auto 0;
+    &-img{
+        width: 636px;
+        height: 400px;
+        margin-bottom: 16px;
+        border-radius: 8px;
+    }
+}
+
+.desc{
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    padding: 0 16px;
+    h2{
+       font-size: $fs-1;
+       margin-bottom: 8px; 
+       color: $primary700;
+    }
+    p, li{
+        font-size: $fs-4;
+    }
+
+    p{
+        color: $primary500;
+    }
+
+    .tag-list{
+        margin-top: 24px;
+        display: flex;
+        column-gap: 16px;
+        li{
+            padding: 4px 12px;
+            border-radius: 12px;
+            background: $primary200;
+            a{color: $primary700;}
+            
+        }
+    }
+
+}
+
+.page-pagination{
+    margin-top: 72px;
+    font-size: $fs-2;
+    margin-bottom: 120px;
+    ul{
+        display: flex;
+        justify-content: center;
+        column-gap: 16px;
+        li{
+            a{
+                color: $primary700;
+            }
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 4px;
+        }
+        .active{
+            background: $primary800;
+            a{color: $primary50;};
+            
+        }
+    }
+}
+
+a{
+    text-decoration: none;
+}
