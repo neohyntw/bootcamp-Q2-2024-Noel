@@ -53,60 +53,39 @@ table {
 }
 
 body {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans TC", "sans-serif";
   font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
   font-variation-settings: "wdth" 100;
+  line-height: 1.5;
 }
 
 .noto-sans-bold {
-  font-family: "Noto Sans", sans-serif;
-  font-optical-sizing: auto;
   font-weight: bold;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-}
-
-.noto-sans-regular {
-  font-family: "Noto Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
 }
 
 .card {
-  width: 1296px;
+  max-width: 1296px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   row-gap: 80px;
   -moz-column-gap: 24px;
        column-gap: 24px;
   margin: 120px auto 0;
 }
 .card-img {
-  width: 636px;
-  height: 400px;
+  width: 100%;
   margin-bottom: 16px;
   border-radius: 8px;
 }
 
 .desc {
-  font-family: "Noto Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
   padding: 0 16px;
 }
 .desc h2 {
   font-size: 28px;
   margin-bottom: 8px;
   color: #3b3b3b;
-}
-.desc p, .desc li {
-  font-size: 16px;
 }
 .desc p {
   color: #919191;
@@ -119,7 +98,7 @@ body {
 }
 .desc .tag-list li {
   padding: 4px 12px;
-  border-radius: 12px;
+  border-radius: 16px;
   background: #f1f1f1;
 }
 .desc .tag-list li a {
@@ -156,4 +135,13 @@ body {
 
 a {
   text-decoration: none;
+}
+
+@media (min-width: 414px) {
+  .card {
+    width: 100%;
+  }
+  .desc h2 {
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=all.css.map */

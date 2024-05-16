@@ -1,7 +1,6 @@
 $fs-1: 28px;
 $fs-2: 24px;
 $fs-3: 20px;
-$fs-4: 16px;
 $primary900: #000000;
 $primary800: #1e1e1e;
 $primary700: #3b3b3b;
@@ -18,62 +17,39 @@ $primary50: #ffffff;
 }
 
 body{
-    font-family: "Noto Sans", sans-serif;
+    font-family: "Noto Sans TC", "sans-serif";
     font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
     font-variation-settings:
       "wdth" 100;
+      line-height: 1.5;
 }
 
 .noto-sans-bold {
-    font-family: "Noto Sans", sans-serif;
-    font-optical-sizing: auto;
     font-weight: bold;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
   }
 
-  .noto-sans-regular {
-    font-family: "Noto Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-  }
 
 .card{
-    width: 1296px;
+    max-width: 1296px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     row-gap: 80px;
     column-gap: 24px;
     margin: 120px auto 0;
     &-img{
-        width: 636px;
-        height: 400px;
+        width: 100%;
         margin-bottom: 16px;
         border-radius: 8px;
     }
 }
 
 .desc{
-    font-family: "Noto Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
     padding: 0 16px;
     h2{
        font-size: $fs-1;
        margin-bottom: 8px; 
        color: $primary700;
-    }
-    p, li{
-        font-size: $fs-4;
     }
 
     p{
@@ -86,7 +62,7 @@ body{
         column-gap: 16px;
         li{
             padding: 4px 12px;
-            border-radius: 12px;
+            border-radius: 16px;
             background: $primary200;
             a{color: $primary700;}
             
@@ -123,4 +99,15 @@ body{
 
 a{
     text-decoration: none;
+}
+
+@media (min-width:414px) {
+    .card{
+        width: 100%;
+    }
+    .desc{
+        h2{
+            font-size: $fs-3;
+        }
+    }
 }
