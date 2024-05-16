@@ -67,16 +67,17 @@ body {
   max-width: 1296px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   row-gap: 80px;
-  -moz-column-gap: 24px;
-       column-gap: 24px;
   margin: 120px auto 0;
 }
 .card-img {
   width: 100%;
   margin-bottom: 16px;
   border-radius: 8px;
+}
+.card-list {
+  width: 48%;
 }
 
 .desc {
@@ -106,9 +107,8 @@ body {
 }
 
 .page-pagination {
-  margin-top: 72px;
+  margin: 72px auto 120px;
   font-size: 24px;
-  margin-bottom: 120px;
 }
 .page-pagination ul {
   display: flex;
@@ -137,11 +137,24 @@ a {
   text-decoration: none;
 }
 
-@media (min-width: 375px) {
+@media (max-width: 518px) {
   .card {
+    padding: 0 12px;
+    margin: 80px auto 0;
+    row-gap: 48px;
+  }
+  .card-list {
     width: 100%;
   }
   .desc h2 {
     font-size: 20px;
+  }
+  .desc .tag-list {
+    -moz-column-gap: 8px;
+         column-gap: 8px;
+    margin-top: 16px;
+  }
+  .page-pagination {
+    margin: 48px auto 80px;
   }
 }/*# sourceMappingURL=all.css.map */

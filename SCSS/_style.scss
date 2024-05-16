@@ -33,14 +33,16 @@ body{
     max-width: 1296px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     row-gap: 80px;
-    column-gap: 24px;
     margin: 120px auto 0;
     &-img{
         width: 100%;
         margin-bottom: 16px;
         border-radius: 8px;
+    }
+    &-list{
+        width: 48%;
     }
 }
 
@@ -72,9 +74,8 @@ body{
 }
 
 .page-pagination{
-    margin-top: 72px;
+    margin: 72px auto 120px;
     font-size: $fs-2;
-    margin-bottom: 120px;
     ul{
         display: flex;
         justify-content: center;
@@ -101,13 +102,26 @@ a{
     text-decoration: none;
 }
 
-@media (min-width:375px) {
+@media (max-width:518px) {
     .card{
-        width: 100%;
+        padding: 0 12px;
+        margin: 80px auto 0;
+        &-list{
+            width: 100%;
+        }
+        row-gap: 48px;
     }
     .desc{
         h2{
             font-size: $fs-3;
         }
+        .tag-list{
+            column-gap: 8px;
+            margin-top: 16px;
+        }
     }
+    .page-pagination{
+        margin: 48px auto 80px;
+    }
+    
 }
