@@ -138,7 +138,7 @@ body{
             font-weight: bold;
         }
         a:hover, .active {
-            transition: all .2s linear;
+            transition: all .15s linear;
         background:
           linear-gradient(to right, $primary500 1px, transparent 1px) 0 0,
           linear-gradient(to right, $primary500 1px, transparent 1px) 0 100%,
