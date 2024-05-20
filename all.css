@@ -286,6 +286,7 @@ footer .mediaicon {
   line-height: 56px;
   width: 56px;
   height: 56px;
+  text-align: center;
 }
 footer .social-media .active {
   background-color: #000;
