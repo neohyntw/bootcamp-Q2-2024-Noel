@@ -24,7 +24,7 @@ body{
       line-height: 1.5;
 }
 
-.navbar, .card{
+.navbar, .card, footer > div{
     max-width: 1296px;
     padding: 0 12px;
 }
@@ -232,8 +232,74 @@ a{
     text-decoration: none;
 }
 
-.material-symbols-rounded {
+.navicon {
     display: none;
+}
+
+footer{
+    background: url('images/footer-bg-lg.jpg') no-repeat;
+    background-size: cover;
+    a{
+        color: #000;
+    }
+    > div{
+        display: flex;
+        padding: 80px 12px;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+    }
+    .mediaicon {
+        display: inline;
+        font-size: 48px;
+        line-height: 56px;
+        width: 56px;
+        height: 56px;
+    }
+    .social-media{
+        .active{
+            .mediaicon, a{
+                color: #fff;
+            }
+            background-color: #000;
+        }
+        li{
+            border: 1px solid $primary400;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            vertical-align: middle;
+            margin-bottom: 24px;
+            background-color: #ffffff;
+            position: relative;
+            padding: 8px 24px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            
+
+            .stretched-link::after {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                z-index: 1;
+                pointer-events: auto;
+                content: "";
+                background-color: transparent;
+              }
+            
+        }
+    }
+    .about{
+        .logo, p, a{
+            margin-bottom: 24px;
+        }
+        a{
+            color: $primary500;
+        }
+    }
 }
 
 @media (max-width:768px) {
@@ -353,8 +419,17 @@ a{
         }
     } 
 
-    .freeze{
-        overflow: hidden;
+    footer > div{
+        flex-direction: column;
+        .about{
+            margin-bottom: 40px;
+        }
     }
+
     
+    
+}
+
+.freeze{
+    overflow: hidden;
 }

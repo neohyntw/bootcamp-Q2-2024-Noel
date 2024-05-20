@@ -60,7 +60,7 @@ body {
   line-height: 1.5;
 }
 
-.navbar, .card {
+.navbar, .card, footer > div {
   max-width: 1296px;
   padding: 0 12px;
 }
@@ -262,8 +262,67 @@ a {
   text-decoration: none;
 }
 
-.material-symbols-rounded {
+.navicon {
   display: none;
+}
+
+footer {
+  background: url("images/footer-bg-lg.jpg") no-repeat;
+  background-size: cover;
+}
+footer a {
+  color: #000;
+}
+footer > div {
+  display: flex;
+  padding: 80px 12px;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+footer .mediaicon {
+  display: inline;
+  font-size: 48px;
+  line-height: 56px;
+  width: 56px;
+  height: 56px;
+}
+footer .social-media .active {
+  background-color: #000;
+}
+footer .social-media .active .mediaicon, footer .social-media .active a {
+  color: #fff;
+}
+footer .social-media li {
+  border: 1px solid #c1c1c1;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  margin-bottom: 24px;
+  background-color: #ffffff;
+  position: relative;
+  padding: 8px 24px;
+}
+footer .social-media li:last-child {
+  margin-bottom: 0;
+}
+footer .social-media li .stretched-link::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: auto;
+  content: "";
+  background-color: transparent;
+}
+footer .about .logo, footer .about p, footer .about a {
+  margin-bottom: 24px;
+}
+footer .about a {
+  color: #919191;
 }
 
 @media (max-width: 768px) {
@@ -376,7 +435,13 @@ a {
     left: 0;
     z-index: 3;
   }
-  .freeze {
-    overflow: hidden;
+  footer > div {
+    flex-direction: column;
   }
+  footer > div .about {
+    margin-bottom: 40px;
+  }
+}
+.freeze {
+  overflow: hidden;
 }/*# sourceMappingURL=all.css.map */
