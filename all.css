@@ -269,6 +269,7 @@ a {
 footer {
   background: url("images/footer-bg-lg.jpg") no-repeat;
   background-size: cover;
+  background-position: center;
 }
 footer a {
   color: #000;
@@ -445,6 +446,7 @@ footer .about a {
   }
   footer > div .about {
     margin-bottom: 40px;
+    text-align: center;
   }
 }
 .freeze {

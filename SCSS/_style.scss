@@ -239,6 +239,7 @@ a{
 footer{
     background: url('images/footer-bg-lg.jpg') no-repeat;
     background-size: cover;
+    background-position: center;
     a{
         color: #000;
     }
@@ -424,10 +425,12 @@ footer{
     footer{
         background: url('images/footer-bg-sm.jpg') no-repeat;
         background-size: cover;
+        
         & > div{
         flex-direction: column;
         .about{
             margin-bottom: 40px;
+            text-align: center;
         }
     }} 
 
