@@ -436,6 +436,10 @@ footer .about a {
     left: 0;
     z-index: 3;
   }
+  footer {
+    background: url("images/footer-bg-sm.jpg") no-repeat;
+    background-size: cover;
+  }
   footer > div {
     flex-direction: column;
   }

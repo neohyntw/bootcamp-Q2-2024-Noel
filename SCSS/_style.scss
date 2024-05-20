@@ -420,12 +420,16 @@ footer{
         }
     } 
 
-    footer > div{
+    
+    footer{
+        background: url('images/footer-bg-sm.jpg') no-repeat;
+        background-size: cover;
+        & > div{
         flex-direction: column;
         .about{
             margin-bottom: 40px;
         }
-    }
+    }} 
 
     
     
