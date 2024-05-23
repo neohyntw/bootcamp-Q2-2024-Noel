@@ -17,16 +17,34 @@ $primary50: #ffffff;
 }
 
 body{
-    font-family: "Noto Sans TC", "sans-serif";
+    font-family: "Noto Sans TC", sans-serif;
     font-optical-sizing: auto;
     font-variation-settings:
       "wdth" 100;
       line-height: 1.5;
+      position: relative;
+      .modal{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0);
+        opacity: 0.7;
+        top:80px;
+        left: 0;
+        z-index: 3;
+    }
+    .close{
+        display: none;
+    }
+      
 }
 
-.navbar, .card, footer > div{
+
+
+.container{
     max-width: 1296px;
-    padding: 0 12px;
+    padding: auto 12px;
+    margin: auto;
 }
 .noto-sans-bold {
     font-weight: bold;
@@ -37,14 +55,14 @@ body{
     padding: 80px 0;
     background-color: $primary100;
     position: relative;
-    z-index: -10;
+    z-index: 1;
   }
   .exp{
     display: flex;
     justify-content: center;
     column-gap: 40px;
     margin-top: 24px;
-    h2{
+    h3{
         margin-bottom: 8px;
         padding-bottom: 4px;
         position: relative;
@@ -60,7 +78,7 @@ body{
         }
     }
     &-list{
-        h2{
+        h3{
             color: $primary600;
         }
         width: 298px;
@@ -121,6 +139,13 @@ body{
     margin: 32px auto;
     display: flex;
     align-items: center;
+    button{
+        background-color: white;
+        border: none;
+        &:hover{
+            cursor: pointer;
+        }
+    }
     .logo{
         img{
             display: block;
@@ -159,29 +184,30 @@ body{
     }
 }
 
-.card{
+.card-list{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 80px;
     column-gap: 24px;
     margin: 120px auto 0;
-    &-img{
+    .card-img{
         max-width: 100%;
-        margin-bottom: 16px;
         border-radius: 8px;
+        border: 1px solid $primary200;
     }
-    &-list{
+    .card{
         width: calc(50% - 12px);
     }
 }
 
-.desc{
-    padding: 0 16px;
+.card-body{
+    padding: 16px 16px 0;
+    color: $primary700;
     h2{
        font-size: $fs-1;
        margin-bottom: 8px; 
-       color: $primary700;
+       line-height: 33.2px;
     }
 
     p{
@@ -236,7 +262,7 @@ a{
     display: none;
 }
 
-footer{
+.footer-bg{
     background: url('images/footer-bg-lg.jpg') no-repeat;
     background-size: cover;
     background-position: center;
@@ -275,6 +301,7 @@ footer{
             background-color: #ffffff;
             position: relative;
             padding: 8px 24px;
+            max-width: 306px;
             &:last-child{
                 margin-bottom: 0;
             }
@@ -365,7 +392,7 @@ footer{
             left: 0;
             background-color: #ffffff;
             border-top: 1px solid rgba(0, 0, 0, 0.07);
-            z-index: 99;
+            z-index: 4;
             display: none;
         }
         .material-symbols-rounded {
@@ -408,17 +435,7 @@ footer{
             flex-direction: column;
             opacity: 1;
         }
-        &::after{
-            content: '';
-            position: absolute;
-            width: 100vw;
-            height: 100vh;
-            background: rgba(0, 0, 0);
-            opacity: 0.7;
-            top:80px;
-            left: 0;
-            z-index: 3;
-        }
+        
     } 
 
     

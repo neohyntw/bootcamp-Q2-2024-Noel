@@ -4,5 +4,7 @@ $(document).ready(function(){
     //   $(".navlist").slideToggle();
       $(".navbar").toggleClass('expand');
       $('body').toggleClass('freeze');
+      $('.modal').toggleClass('close');
+
     });
   });
