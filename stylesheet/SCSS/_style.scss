@@ -46,6 +46,7 @@ body{
     padding: auto 12px;
     margin: auto;
 }
+
 .noto-sans-bold {
     font-weight: bold;
   }
@@ -335,10 +336,10 @@ a{
     body{
         padding: 0;
     }
-    .card{
+    .card-list{
         padding: 0 12px;
         margin: 80px auto 0;
-        &-list{
+        .card{
             width: auto;
             img{
                 width: 100vw;
@@ -348,7 +349,7 @@ a{
         row-gap: 48px;
         column-gap: 0;
     }
-    .desc{
+    .card-body{
         h2{
             font-size: $fs-3;
         }

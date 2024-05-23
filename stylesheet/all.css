@@ -365,23 +365,23 @@ a {
   body {
     padding: 0;
   }
-  .card {
+  .card-list {
     padding: 0 12px;
     margin: 80px auto 0;
     row-gap: 48px;
     -moz-column-gap: 0;
          column-gap: 0;
   }
-  .card-list {
+  .card-list .card {
     width: auto;
   }
-  .card-list img {
+  .card-list .card img {
     width: 100vw;
   }
-  .desc h2 {
+  .card-body h2 {
     font-size: 20px;
   }
-  .desc .tag-list {
+  .card-body .tag-list {
     -moz-column-gap: 8px;
          column-gap: 8px;
     margin-top: 16px;
