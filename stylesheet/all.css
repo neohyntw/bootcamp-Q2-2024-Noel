@@ -86,7 +86,7 @@ body .close {
 
 .container {
   max-width: 1296px;
-  padding: auto 12px;
+  padding: 0 12px;
   margin: auto;
 }
 
