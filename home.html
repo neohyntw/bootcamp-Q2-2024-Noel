@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第二題 產品列表排版</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <link rel="stylesheet" href="./stylesheet/all.css">
+</head>
+
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <div class="modal close"></div>
+    <div class="container-nav">
+        <nav class="navbar">
+            <div class="navhead">
+                <h1 class="logo">
+                    <a href="#"><img src="svg/logo.svg" alt="Noel"></a></h1>
+                <button type="button">
+                        <span class="material-symbols-rounded navicon">
+                            menu
+                            </span>
+                    <span class="material-symbols-rounded navicon close"> close </span>
+                </button>
+            </div>
+            
+            <ul class="navlist">
+                <li>
+                    <a class="active" href="home.html">首頁</a>
+                </li>
+                <li >
+                    <a href="portfolio.html">作品集</a>
+                </li>
+                <li>
+                    <a href="services">服務項目</a>
+                </li>
+                <li>
+                    <a href="blog">部落格</a>
+                </li>
+                <li>
+                    <a href="contact-us">聯絡我</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+   
+    <main class="top-banner">
+        <img src="images/hero-sm.jpg" alt="" class="d-md-none d-block">
+        <div class="container w-100" style="display: flex;">
+            <div class="title">
+                <h2>Hi! 我是 Noel</h2>
+                <h3>具有 10 年經驗的<strong>資深 UI 設計師</strong>兼<strong>前端工程師</strong>技術雙修並行，熱衷於優化使用者的網頁體驗</h3>
+                <h3 class="tag">WEB DEVELOPMENT / BRANDING / UI / UX / APP DESIGN</h3>
+                <ul class="social-media">
+                    <li><a href=""><img src="svg/instagram.svg" alt="Instagram"></a></li>
+                    <li><a href=""><img src="svg/facebook.svg" alt="Facebook"></a></li>
+                    <li><a href=""><img src="svg/youtube.svg" alt="Youtube"></a></li>
+                </ul>
+            </div>
+            <!-- <div class="banner">
+
+            </div> -->
+        </div>
+    </main>
+
+    <section>
+    <div class="section-title"><h3>作品介紹</h3></div>
+         <ul class="portfolio-list">
+            <li class="portfolio pf-galaxy">
+                <img src="images/homepage-work1-sm.jpg" class="d-block" alt="Star Travel">
+                <div class="container">
+                    <img src="images/homepage-work1.png" class="d-none" alt="Star Travel">
+                    
+                    <div class="card">
+                        <h3>星際旅行訂票平台</h3>
+                        <p>悠遊宇宙的夢想，從這裡開始實現</p>
+                        <ul class="tag-list">
+                            <li><a href="">網頁設計</a></li>
+                            <li><a href="">響應式設計</a></li>
+                            <li><a href="">Bootstrap</a></li>
+                        </ul>
+                        <hr>
+                        <a class="cta-intro" href="#">完整介紹<span class="material-symbols-rounded">
+                            arrow_forward
+                            </span></a>
+                    </div>
+                </div>
+            </li>
+            <li class="portfolio pf-money">
+                <img src="images/homepage-work2-sm.jpg" class="d-block" alt="Money Management">
+                <div class="container">
+                    <div class="card">
+                        <h3>理財APP</h3>
+                        <p>連動帳戶與行動支付，讓 AI 提供您最好的理財建議</p>
+                        <ul class="tag-list">
+                            <li><a href="">APP設計</a></li>
+                            <li><a href="">iOS</a></li>
+                            <li><a href="">React</a></li>
+                        </ul>
+                        <hr>
+                        <a class="cta-intro" href="#">完整介紹<span class="material-symbols-rounded">
+                            arrow_forward
+                            </span></a>
+                    </div>
+                </div>
+            </li>
+            <li class="portfolio pf-beauty">
+                <img src="images/homepage-work3-sm.jpg" class="d-block" alt="Tresure">
+                <div class="container">
+                    <img src="images/homepage-work3.png"  class="d-none" alt="Tresure">
+                    <div class="card">
+                        <h3>醫美診所官網</h3>
+                        <p>永保青春的秘密，從粹究開始</p>
+                        <ul class="tag-list">
+                            <li><a href="">網頁設計</a></li>
+                            <li><a href="">響應式設計</a></li>
+                            <li><a href="">ＷordPress</a></li>
+                        </ul>
+                        <hr>
+                        <a class="cta-intro" href="#">完整介紹<span class="material-symbols-rounded">
+                            arrow_forward
+                            </span></a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="service-bg">
+        <div class="section-title"><h3>服務項目</h3></div>
+            <div class="container">
+                <ul class="service-list">
+                    <li>
+                        <img src="svg/service-item-visual.svg" alt="Graphic design">
+                        <p>平面設計</p>
+                        
+                    </li>
+                    <li>
+                        <img src="svg/service-item-ui.svg" alt="UI design">
+                        <p>UI 設計</p>
+                    </li>
+                    <li>
+                        <img src="svg/service-item-html&css.svg" alt="Slicing">
+                        <p>切版服務</p>
+                    </li>
+                    <li>
+                        <img src="svg/service-item-front-end.svg" alt="Front end development">
+                        <p>前端開發</p>
+                    </li>
+                </ul>
+                <p>想要合作或瞭解更多？</p>
+                <a class="cta-intro" href="#">詳細內容與合作流程<span class="material-symbols-rounded">
+                    arrow_forward
+                    </span></a>
+
+            </div>
+    </section>
+        
+    <section class="article-slider">
+        <div class="section-title"><h3>精選文章</h3></div>
+        <div class="container px-0">
+            <ul class="article-list">
+                <li class="article">
+                    <img src="images/article-image1.jpg" alt="">
+                    <div class="article-details">
+                        <h3>Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)</h3>
+                        <div class="article-tag">
+                            <a href="#">UI/UX 新知</a>
+                            <p>2024/02/10</p>
+                        </div>
+                    </div>
+                    
+                </li>
+                <li class="article">
+                    <img src="images/article-image2.jpg" alt="">
+                    <div class="article-details">
+                    <h3>給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (下)</h3>
+                        <div class="article-tag">
+                            <a href="#">UI/UX 新知</a>
+                            <p>2023/11/20</p>
+                        </div></div>
+                </li>
+                <li class="article">
+                    <img src="images/article-image3.jpg" alt="">
+                    <div class="article-details"><h3>給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (上)</h3>
+                        <div class="article-tag">
+                            <a href="#">UI/UX 新知</a>
+                            <p>2023/10/18</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="article">
+                    <img src="images/article-image4.jpg" alt="">
+                    <div class="article-details"><h3>給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (上)</h3>
+                        <div class="article-tag">
+                            <a href="#">UI/UX 新知</a>
+                            <p>2023/10/18</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="article">
+                    <img src="images/article-image5.jpg" alt="">
+                    <div class="article-details"><h3>給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (上)</h3>
+                        <div class="article-tag">
+                            <a href="#">UI/UX 新知</a>
+                            <p>2023/10/18</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="article">
+                    <img src="images/article-image6.jpg" alt="">
+                    <div class="article-details"><h3>給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (上)</h3>
+                        <div class="article-tag">
+                            <a href="#">UI/UX 新知</a>
+                            <p>2023/10/18</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="article">
+                    <img src="images/article-image7.jpg" alt="">
+                    <div class="article-details"><h3>給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (上)</h3>
+                        <div class="article-tag">
+                            <a href="#">UI/UX 新知</a>
+                            <p>2023/10/18</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="article-list-sm">
+                <li class="article">
+                    <img src="images/article-image1.jpg" alt="">
+                    <div class="article-details">
+                        <h3>Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)</h3>
+                        <div class="article-tag">
+                            <a href="#">UI/UX 新知</a>
+                            <p>2024/02/10</p>
+                        </div>
+                    </div>
+                    
+                </li>
+                <li class="article">
+                    <img src="images/article-image2.jpg" alt="">
+                    <div class="article-details">
+                    <h3>給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (下)</h3>
+                        <div class="article-tag">
+                            <a href="#">UI/UX 新知</a>
+                            <p>2023/11/20</p>
+                        </div></div>
+                </li>
+                <li class="article">
+                    <img src="images/article-image3.jpg" alt="">
+                    <div class="article-details"><h3>給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (上)</h3>
+                        <div class="article-tag">
+                            <a href="#">UI/UX 新知</a>
+                            <p>2023/10/18</p>
+                        </div>
+                    </div>
+                </li>
+                <a class="cta-intro" href="#">更多文章<span class="material-symbols-rounded">
+                    arrow_forward
+                    </span></a>
+            </ul>
+            
+        </div>
+        
+    </section>
+    
+    <footer class="footer-bg">
+        <div class="container">
+            <div class="about">
+                <a href="#"><img class="logo" src="svg/logo.svg" alt="Noel"></a>
+                <p>若有數位產品設計和開發相關問題<br>歡迎填寫表單，或直接與我聯絡！</p> 
+                   <a href="mailto:service@hexschool.com">service@hexschool.com</a>
+            </div>
+            <ul class="social-media">
+                <li class="active"><span class="material-symbols-rounded mediaicon" >
+                    list_alt</span><a class="stretched-link" href="#">填寫表單</a></li>
+                <li><img src="./svg/instagram.svg" class="mediaicon"><a class="stretched-link" href="#">hexschool_demo</a></li>
+                <li><img src="./svg/facebook.svg" class="mediaicon"><a class="stretched-link" href="#">hexschoolTW</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="js/all.js"></script>
+
+</html>

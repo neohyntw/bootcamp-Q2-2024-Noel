@@ -9,8 +9,10 @@
 
 <body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    
     <div class="modal close"></div>
-    <div class="container">
+    <div class="container-nav">
         <nav class="navbar">
             <div class="navhead">
                 <h1 class="logo">
@@ -25,10 +27,10 @@
             
             <ul class="navlist">
                 <li>
-                    <a href="home">首頁</a>
+                    <a href="home.html">首頁</a>
                 </li>
                 <li >
-                    <a class="active" href="portfolio">作品集</a>
+                    <a class="active" href="portfolio.html">作品集</a>
                 </li>
                 <li>
                     <a href="services">服務項目</a>
@@ -62,9 +64,43 @@
         </div>
     </main>
 
-    <div class="container">
+    <div class="container" style="position: relative;">
+
+        <div class="modal-showcase close">
+            <div class="text-right">
+                <a href="#"><span class="material-symbols-rounded"> close </span></a>
+            </div>
+        
+            <h3>星際旅行訂票平台</h3>
+            <p>悠遊宇宙的夢想，從這裡開始實現</p>
+            <div class="showcase">
+                <div class="details">
+                    <p>STAR TRAVEL 為 KK 公司宇宙旅行的購票網站。</p>
+                    <p>主要從地球出發，目的地包含月球、火星、水星、木星；未來太空轉運站建置完畢，將再擴增目的地土星和金星。</p>
+                </div>
+                <div class="info">
+                    <p>設計原則：宇宙旅行、深色背景、強烈視覺效果</p>
+                    <p>開發方式：Bootstrap、Javascript、RWD</p>
+                </div>
+            </div>
+
+            <div class="showcase-figure">
+                <figure >
+                    <img src="images/modal-image1.jpg" alt="Star Travel Main Visual">
+                    <h4>主視覺</h4>
+                    <figcaption>可直接設定日期、起迄星球、張數，快速查詢可購買的票券。</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/modal-image2.jpg" alt="Star Travel Main Visual">
+                    <h4>推薦查詢</h4>
+                    <figcaption>給予最快起飛，以及最熱門的景點推薦，協助使用者進行選擇。</figcaption>
+                </figure>
+            </div>
+           
+        </div>
+
         <ul class="card-list">
-            <li class="card">
+            <li class="card" style="position: relative;">
                 <img src="./images/image-1.jpg" alt="星際旅行訂票平台" class="card-img">
                 <div class="card-body">
                     <h2 class="noto-sans-bold">星際旅行訂票平台</h2>
@@ -75,6 +111,7 @@
                         <li><a href="#">Bootstrap</a></li>
                     </ul>
                 </div>
+                <a href="#" class="stretched-link"></a>
             </li>
             <li class="card">
                 <img src="./images/image-2.jpg" alt="理財App" class="card-img">
