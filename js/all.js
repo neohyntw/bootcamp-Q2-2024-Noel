@@ -22,7 +22,7 @@ $(document).ready(function(){
       $('.modal-showcase').toggleClass('close');
     })
 
-    $('.article-list').slick({
+    $('.slick-slider').slick({
         dots: true,
         infinite: true,
         speed: 500,
