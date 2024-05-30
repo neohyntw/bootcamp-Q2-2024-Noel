@@ -48,11 +48,6 @@
 }
 
 .top-banner{
-    // background: url('../images/hero-lg.jpg');
-    // background-position:center right;
-    // background-attachment:scroll;
-    // background-repeat: no-repeat;
-    // background-size: 50% cover;
     display: flex; justify-content: space-between; align-items: center;
     @media (max-width:992px){
         flex-direction: column-reverse;
@@ -114,7 +109,7 @@
 
 
 .pf-galaxy{
-    background: url('../images/homepage-work1-bg.jpg') no-repeat;
+    background: url('https://firebasestorage.googleapis.com/v0/b/coffeeshop-47307.appspot.com/o/homepage-work1-bg.jpg?alt=media&token=ffe8d2e0-ed20-4300-a095-96e93effd276') no-repeat;
     background-position: center;
     background-size: cover;
     img{
@@ -123,7 +118,7 @@
 }
 
 .portfolio-list .pf-money{
-    background: url('../images/homepage-work2-lg.jpg') no-repeat;
+    background: url('https://firebasestorage.googleapis.com/v0/b/coffeeshop-47307.appspot.com/o/homepage-work2-lg.jpg?alt=media&token=6a467fc0-4c26-4bb8-8942-76a167fb2dcc') no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
@@ -146,7 +141,7 @@
 }
 
 .portfolio-list .pf-beauty{
-    background: url('../images/homepage-work3-bg.jpg') no-repeat;
+    background: url('https://firebasestorage.googleapis.com/v0/b/coffeeshop-47307.appspot.com/o/homepage-work3-bg.jpg?alt=media&token=f31fab34-ac25-4879-8662-7c7c2d43b106') no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
@@ -236,7 +231,7 @@
 }
 
 .service-bg{
-    background: url('../images/homepage-services-bg.jpg') no-repeat;
+    background: url('https://firebasestorage.googleapis.com/v0/b/coffeeshop-47307.appspot.com/o/homepage-services-bg.jpg?alt=media&token=4fb59167-3a10-43bf-801f-c2df79b0f71f') no-repeat;
     background-position: center;
     background-size: cover;
     padding: 120px 0;
@@ -270,7 +265,7 @@
     // flex-wrap: wrap;
     row-gap: 24px;
     li{
-        background: url('../images/service-item-bg.jpg') no-repeat;
+        background: url('https://firebasestorage.googleapis.com/v0/b/coffeeshop-47307.appspot.com/o/service-item-bg.jpg?alt=media&token=1f0eddab-b0ec-4fa6-838f-cf4e7c6bc23b') no-repeat;
         background-position: center;
         background-size: cover;
         width: 306px;

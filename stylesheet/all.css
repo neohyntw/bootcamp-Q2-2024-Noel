@@ -184,7 +184,7 @@ a {
 }
 
 .footer-bg {
-  background: url("../images/footer-bg-lg.jpg") no-repeat;
+  background: url("https://firebasestorage.googleapis.com/v0/b/coffeeshop-47307.appspot.com/o/footer-bg-lg.jpg?alt=media&token=0eec929f-521b-410f-9a95-fad33fe7b34d") no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -293,7 +293,7 @@ a {
     display: block;
   }
   footer {
-    background: url("../images/footer-bg-sm.jpg") no-repeat;
+    background: url("https://firebasestorage.googleapis.com/v0/b/coffeeshop-47307.appspot.com/o/footer-bg-sm.jpg?alt=media&token=3ce901fc-1caa-4699-98ff-ebc04af3db6e") no-repeat;
     background-size: cover;
   }
   footer > div {
@@ -422,7 +422,7 @@ a {
 }
 
 .pf-galaxy {
-  background: url("../images/homepage-work1-bg.jpg") no-repeat;
+  background: url("https://firebasestorage.googleapis.com/v0/b/coffeeshop-47307.appspot.com/o/homepage-work1-bg.jpg?alt=media&token=ffe8d2e0-ed20-4300-a095-96e93effd276") no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -431,7 +431,7 @@ a {
 }
 
 .portfolio-list .pf-money {
-  background: url("../images/homepage-work2-lg.jpg") no-repeat;
+  background: url("https://firebasestorage.googleapis.com/v0/b/coffeeshop-47307.appspot.com/o/homepage-work2-lg.jpg?alt=media&token=6a467fc0-4c26-4bb8-8942-76a167fb2dcc") no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
@@ -456,7 +456,7 @@ a {
 }
 
 .portfolio-list .pf-beauty {
-  background: url("../images/homepage-work3-bg.jpg") no-repeat;
+  background: url("https://firebasestorage.googleapis.com/v0/b/coffeeshop-47307.appspot.com/o/homepage-work3-bg.jpg?alt=media&token=f31fab34-ac25-4879-8662-7c7c2d43b106") no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
@@ -549,7 +549,7 @@ a {
 }
 
 .service-bg {
-  background: url("../images/homepage-services-bg.jpg") no-repeat;
+  background: url("https://firebasestorage.googleapis.com/v0/b/coffeeshop-47307.appspot.com/o/homepage-services-bg.jpg?alt=media&token=4fb59167-3a10-43bf-801f-c2df79b0f71f") no-repeat;
   background-position: center;
   background-size: cover;
   padding: 120px 0;
@@ -580,7 +580,7 @@ a {
   row-gap: 24px;
 }
 .service-list li {
-  background: url("../images/service-item-bg.jpg") no-repeat;
+  background: url("https://firebasestorage.googleapis.com/v0/b/coffeeshop-47307.appspot.com/o/service-item-bg.jpg?alt=media&token=1f0eddab-b0ec-4fa6-838f-cf4e7c6bc23b") no-repeat;
   background-position: center;
   background-size: cover;
   width: 306px;
